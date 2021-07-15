@@ -1,0 +1,3 @@
+cd /home/maxmax/minictf
+git pull
+touch /var/www/maxmax_pythonanywhere_com_wsgi.py
