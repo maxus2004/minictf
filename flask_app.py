@@ -12,7 +12,7 @@ def cezar(text,rot):
    result = ""
    for i in range(len(text)):
       char = text[i]
-      if (char.isupper()):
+      if (True):
          result += chr((ord(char) + rot-1071) % 26 + 1071)
       else:
          result += chr((ord(char) + rot-97) % 26 + 97)
