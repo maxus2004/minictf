@@ -8,8 +8,10 @@
                     line = text.substring(text.trim().lastIndexOf('\n')+1).trim()
                     if(line=='ls'){
                         console.value+='index.html\nscript.js\nstyle.css\npassword.txt\n'
+                    }else{
+                        console.value+='unknown command: '+line+'\n'
                     }
-                    console.value+='unknown command: '+line+'\n'
+                    console.value+='> '
                 }
             }
         </script>
