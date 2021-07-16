@@ -24,9 +24,9 @@ def task1():
     rot=3
     
     correct = False
-    if request.method='POST':
+    if request.method=='POST':
         answer = request.form['answer']
-        if answer = text:
+        if answer == text:
             return "правильно"
     return render_template('task1.html', rot=rot, encrypted=cezar(text,rot))
 
