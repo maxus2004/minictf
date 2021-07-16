@@ -11,8 +11,8 @@ def mainPage():
 def cezar(text,rot):
     result = ""
     for char in list(text):
-        if char=' ':
-            result+=' '
+        if char==' ':
+            result += ' '
         elif (ord(char)>1000):
             result += chr((ord(char) + rot-1071) % 32 + 1071)
         else:
