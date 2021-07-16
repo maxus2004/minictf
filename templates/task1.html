@@ -8,7 +8,7 @@
                     line = text.substring(text.trim().lastIndexOf('\n')+1+8).trim()
                     if(line==''){
                         
-                    }else if(line=='ls'){
+                    }else if(line=='ls' && dir=''){
                         console.value+='index.html\nscript.js\nstyle.css\nuser_data\n'
                     }else{
                         console.value+='unknown command: '+line+'\n'
