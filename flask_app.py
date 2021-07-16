@@ -32,4 +32,4 @@ def task1():
     return render_template('task1.html', rot=rot, encrypted=cezar(text,rot))
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5678)
