@@ -15,7 +15,7 @@ def cezar(text,rot):
             result += chr((ord(char) + rot-1071) % 26 + 1071)
         else:
             result += chr((ord(char) + rot-97) % 26 + 97)
-        return result
+    return result
 
 @app.route('/task1', methods=['GET','POST'])
 def task1():
