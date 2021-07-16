@@ -1,7 +1,10 @@
-p{
-    font-family: sans-serif;
-    font-size: 20pt;
+.description{
+    font-size: 16pt;
+}
+.taskText{
+    font-size: 30pt;
 }
 body{
+    font-family: sans-serif;
     width:100vw;
 }
