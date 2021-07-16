@@ -8,7 +8,7 @@ def index():
     return 'lolol'
 
 @app.route('/task1')
-def index():
+def task1():
     return render_template('task1.html')
 
 if __name__ == '__main__':
