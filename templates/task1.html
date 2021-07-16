@@ -19,8 +19,9 @@
                     }  
                     else if(line == 'cd ..'){
                         dir='server'
-                    }
-                    else{
+                    }else if(line.startsWith('cd')){
+                        console.value+='Unknown directory'
+                    }else{
                         console.value+='unknown command: '+line+'\n'
                     }
                     console.value+=dir+'> '
