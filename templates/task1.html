@@ -1,10 +1,17 @@
 <html>
     <head>
         <link rel="stylesheet" href="/static/style.css">
-        <script src="static/script.js"></script>
+        <script>
+            function changed(console){
+                text = console.value
+                if(text[text.length-1]=='\n'){
+                    text+='ok\n'
+                }
+            }
+        </script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        
+        <textarea id="console" oninput="changed(this)" rows="10" cols="50"></textarea>
     </body>
 </html>
