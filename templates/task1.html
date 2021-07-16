@@ -2,7 +2,7 @@
     <head>
         <link rel="stylesheet" href="/static/style.css">
         <script>
-            dir =''
+            dir ='server'
             function changed(console){
                 text = console.value
                 if(text[text.length-1]=='\n'){
@@ -17,13 +17,13 @@
                         dir='user_data'
                     
                     }  
-                    else if(line == 'cd ..'||line=='cd /'){
-                        dir=''
+                    else if(line == 'cd ..'){
+                        dir='server'
                     }
                     else{
                         console.value+='unknown command: '+line+'\n'
                     }
-                    console.value+='server> '
+                    console.value+=dir+'> '
                 }
             }
         </script>
