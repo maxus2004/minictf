@@ -9,7 +9,7 @@ def mainPage():
 
 @app.route('/task1')
 def task1():
-    return render_template('task1.html')
+    return render_template('task1.html', rot=2, encrypted='лололоо')
     
 @app.route('/style.css')
 def style_css():
