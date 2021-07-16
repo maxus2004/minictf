@@ -8,12 +8,17 @@ app = Flask(__name__)
 def mainPage():
     return 'lolol'
 
+def cezar(text,rot):
+    
+
 @app.route('/task1', methods=['GET','POST'])
 def task1():
+    correct = False
     if request.method='POST':
         answer = request.form['answer']
-        
-    return render_template('task1.html', rot=2, encrypted='лололоо', completed=False)
+        if answer = text:
+            return "правильно"
+    return render_template('task1.html', rot=rot, encrypted=cezar(text,rot))
 
 if __name__ == '__main__':
     app.run()
