@@ -6,7 +6,8 @@
                 text = console.value
                 if(text[text.length-1]=='\n'){
                     line = text.substring(text.trim().lastIndexOf('\n')+1)
-                    console.value+='ok\n'
+                    if(line=='ls')
+                        console.value+='index.html\nscript.js\nstyle.css\npassword.txt\n'
                 }
             }
         </script>
