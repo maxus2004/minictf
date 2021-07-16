@@ -9,14 +9,13 @@ def mainPage():
     return 'lolol'
 
 def cezar(text,rot):
-   result = ""
-   for i in range(len(text)):
-      char = text[i]
-      if (True):
-         result += chr((ord(char) + rot-1071) % 26 + 1071)
-      else:
-         result += chr((ord(char) + rot-97) % 26 + 97)
-      return result
+    result = ""
+    for char in text):
+        if (True):
+            result += chr((ord(char) + rot-1071) % 26 + 1071)
+        else:
+            result += chr((ord(char) + rot-97) % 26 + 97)
+        return result
 
 @app.route('/task1', methods=['GET','POST'])
 def task1():
