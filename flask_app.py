@@ -10,7 +10,7 @@ def mainPage():
 
 def cezar(text,rot):
     result = ""
-    for char in text):
+    for char in list(text):
         if (True):
             result += chr((ord(char) + rot-1071) % 26 + 1071)
         else:
