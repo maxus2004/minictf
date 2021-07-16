@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def mainPage():
-    return 'lolol'
+    return render_template('index.html')
 
 @app.route('/task1')
 def task1():
