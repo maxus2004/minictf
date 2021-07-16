@@ -2,15 +2,25 @@
     <head>
         <link rel="stylesheet" href="/static/style.css">
         <script>
+            dir =''
             function changed(console){
                 text = console.value
                 if(text[text.length-1]=='\n'){
                     line = text.substring(text.trim().lastIndexOf('\n')+1+8).trim()
                     if(line==''){
                         
-                    }else if(line=='ls' && dir=''){
+                    }else if(line=='ls' && dir==''){
                         console.value+='index.html\nscript.js\nstyle.css\nuser_data\n'
-                    }else{
+                    }else if(line=='ls' && dir=='user_data'){
+                        console.value+='passwords.txt\npersonal_info.txt\ncredit_cards.txt\n'
+                    }else if(line == 'cd user_data'){
+                        dir='user_data'
+                    
+                    }  
+                    else if(line == 'cd ..'||line=='cd /'){
+                        dir=''
+                    }
+                    else{
                         console.value+='unknown command: '+line+'\n'
                     }
                     console.value+='server> '
