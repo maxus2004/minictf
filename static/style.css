@@ -1,15 +1,6 @@
-.description{
-    font-size: 16pt;
-}
-.taskText{
-    font-size: 30pt;
-}
-.answerInput{
-    width:90%;
-    font-size:30pt;
-}
-.submitBtn{
-    font-size:30pt;
+#console{
+    background-color: black;
+    color:green;
 }
 body{
     font-family: sans-serif;
