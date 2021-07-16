@@ -7,6 +7,9 @@
 .answerInput{
     width:90%;
 }
+.submitBtn{
+    font-size:30pt;
+}
 body{
     font-family: sans-serif;
     width:100vw;
