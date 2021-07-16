@@ -4,6 +4,9 @@
 .taskText{
     font-size: 30pt;
 }
+.answerInput{
+    width:90%;
+}
 body{
     font-family: sans-serif;
     width:100vw;
