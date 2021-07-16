@@ -7,9 +7,9 @@
                 if(text[text.length-1]=='\n'){
                     line = text.substring(text.trim().lastIndexOf('\n')+1)
                     if(line=='ls'){
-                        text+='index.html\nscript.js\nstyle.css\npassword.txt\n'
+                        console.value+='index.html\nscript.js\nstyle.css\npassword.txt\n'
                     }
-                    text+='unknown command: '+line
+                    console.value+='unknown command: '+line
                 }
             }
         </script>
