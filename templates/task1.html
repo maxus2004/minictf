@@ -16,7 +16,7 @@
                     }else if(line == 'cd user_data'){
                         dir='user_data'
                     }  
-                    else if(line == 'cd ..'){
+                    else if(line == 'cd ..'||line=='cd..'){
                         dir='server'
                     }else if(line.startsWith('cd')){
                         console.value+='Unknown directory\n'
