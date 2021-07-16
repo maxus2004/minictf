@@ -6,7 +6,7 @@
             function changed(console){
                 text = console.value
                 if(text[text.length-1]=='\n'){
-                    line = text.substring(text.trim().lastIndexOf('\n')+1+8).trim()
+                    line = text.substring(text.trim().lastIndexOf('\n')+1+dir.length+2).trim()
                     if(line==''){
                         
                     }else if(line=='ls' && dir=='server'){
