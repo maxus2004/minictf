@@ -6,7 +6,9 @@
                 text = console.value
                 if(text[text.length-1]=='\n'){
                     line = text.substring(text.trim().lastIndexOf('\n')+1+8).trim()
-                    if(line=='ls'){
+                    if(line==''){
+                        
+                    }else if(line=='ls'){
                         console.value+='index.html\nscript.js\nstyle.css\npassword.txt\n'
                     }else{
                         console.value+='unknown command: '+line+'\n'
