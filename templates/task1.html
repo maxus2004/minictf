@@ -7,7 +7,6 @@ dirs = {"server":{
         "user_data":{
             "passwords.json":'{\n"admin":"суперпуперкрутойпароль",\n"prodavets":"passwwworddd",\n"uborshik":"daytezarplatu"\n}',
             "credit_cards.txt":"2674677656770557\n2674677656770557\n2674677656770557\n"
-            
         },
         "index.html":"index html file\n nothing here",
         "style.css":"styleeee",
@@ -28,23 +27,29 @@ function changed(console){
             +1+dir.length+2).trim()
     if(line==''){
 
-    }else if(line=='ls' && dir=='server'){
-        console.value+='index.html\nscript.js\nstyle.css\nuser_data\n'
-    }else if(line=='ls' && dir=='user_data'){
-        console.value+='passwords.json\npersonal_info.json\ncredit_cards.json\n'
+    }else if(line=='ls'){
+        for(file in getDir(dir)){
+            console.value+=file+'\n'
+        }
     }else if(line.startsWith('cd')){
         newdir=line.substring(2).trim()
-        if(line == 'cd user_data'){
-            dir='user_data'
-        }  
-        else if(line == 'cd ..'||line=='cd..'){
+        if(newdir=='..'){
             dir='server'
         }
-        console.value+='Unknown directory\n'
+        else if(getDir(dir)[newdir]!=null){
+            if((typeof getDir(dir)[newdir]) == 'string'){
+            console.value+='Not a directory\n'
+            }else{
+                dir = dir+'/'+newdir
+            }
+        }
+        else{
+            console.value+='Unknown directory\n'
+        }
     }else{
         console.value+='unknown command: '+line+'\n'
     }
-    console.value+=dir+'> '
+    console.value+=dir.substring(dir.lastIndexOf('/')+1)+'> '
     console.scrollTop = console.scrollHeight
 
     }
