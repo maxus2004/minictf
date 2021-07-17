@@ -17,8 +17,8 @@ dirs = {"server":{
 
 function getDir(path){
     directory = dirs
-    for(part in path.split('/')){
-        alert(part)
+    for(part of path.split('/')){
+        alert(path.split('/'))
         directory = directory[part]
     }
     return directory
