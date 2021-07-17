@@ -17,11 +17,11 @@ dirs = {"server":{
 
 function getDir(path){
     directory = dirs
-    for(part in path.split('/')){
+    for(part of path.split('/')){
         alert(path.split('/'))
         directory = directory[part]
     }
-    return dirs[path]
+    return directory
 }
 
 
