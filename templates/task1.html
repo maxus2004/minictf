@@ -15,7 +15,13 @@ dirs = {"server":{
     
 }
 
-
+function getDir(d){
+    directory = dirs
+    for(part in d.split('/')){
+        directory = directory[part]
+    }
+    return directory
+}
 
 
 dir ='server'
