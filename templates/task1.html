@@ -15,18 +15,16 @@ dirs = {"server":{
     
 }
 
-alert(dirs)
-
 function getDir(d){
     directory = dirs
-    for(part in d.split('/')){
-        directory = directory[part]
-    }
-    return directory
+    //for(part in d.split('/')){
+    //    directory = directory[part]
+    //}
+    return dirs[d]
 }
 
 
-dir ='server'
+dir ='/server'
 function changed(console){
     text = console.value
     if(text[text.length-1]=='\n'){
