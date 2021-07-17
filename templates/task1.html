@@ -15,12 +15,8 @@ function changed(console){
         console.value+='index.html\nscript.js\nstyle.css\nuser_data\n'
     }else if(line=='ls' && dir=='user_data'){
         console.value+='passwords.json\npersonal_info.json\ncredit_cards.json\n'
-    }else if(line == 'cd user_data'){
-        dir='user_data'
-    }  
-    else if(line == 'cd ..'||line=='cd..'){
-        dir='server'
     }else if(line.startsWith('cd')){
+        
         console.value+='Unknown directory\n'
     }else{
         console.value+='unknown command: '+line+'\n'
