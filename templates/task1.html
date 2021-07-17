@@ -59,7 +59,7 @@ function changed(console){
         }else if((typeof getDir(dir)[filename]) == 'string'){
             console.value+=getDir(dir)[filename]+'\n'
         }else{
-            console.value+='not a file'
+            console.value+='not a file\n'
         }
     }else{
         console.value+='unknown command: '+line+'\n'
