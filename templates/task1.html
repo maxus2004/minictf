@@ -2,6 +2,19 @@
     <head>
         <link rel="stylesheet" href="/quest/static/style.css">
         <script>
+
+dirs = {"server":{
+        "user_data":{},
+        "index.html":"index html file\n nothing here",
+        "style.css":"styleeee",
+        "script.js":"alert('LOL')"
+    }
+    
+}
+
+
+
+
 dir ='server'
 function changed(console){
     text = console.value
@@ -16,7 +29,13 @@ function changed(console){
     }else if(line=='ls' && dir=='user_data'){
         console.value+='passwords.json\npersonal_info.json\ncredit_cards.json\n'
     }else if(line.startsWith('cd')){
-        
+        newdir=line.substring(2).trim()
+        if(line == 'cd user_data'){
+            dir='user_data'
+        }  
+        else if(line == 'cd ..'||line=='cd..'){
+            dir='server'
+        }
         console.value+='Unknown directory\n'
     }else{
         console.value+='unknown command: '+line+'\n'
