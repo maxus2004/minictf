@@ -47,12 +47,14 @@ function changed(console) {
         } else if (line.startsWith('cat')) {
             filename = line.substring(3).trim()
             if (getDir(dir)[filename] == null) {
-                console.value += 'file not found'
+                console.value += 'file not found\n'
             } else if ((typeof getDir(dir)[filename]) == 'string') {
                 console.value += getDir(dir)[filename]+'\n'
             } else {
                 console.value += 'not a file\n'
             }
+        }else if (line == 'clear'){
+            console.value = ''
         } else {
             console.value += 'unknown command: '+line+'\n'
         }
