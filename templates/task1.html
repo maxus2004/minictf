@@ -15,13 +15,13 @@ dirs = {"server":{
     
 }
 
-function getDir(d){
+function getDir(path){
     directory = dirs
-    for(part in d.split('/')){
-        alert(d)
+    for(part in path.split('/')){
+        alert(path.split('/'))
         directory = directory[part]
     }
-    return dirs[d]
+    return dirs[path]
 }
 
 
