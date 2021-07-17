@@ -2,32 +2,34 @@
     <head>
         <link rel="stylesheet" href="/quest/static/style.css">
         <script>
-            dir ='server'
-            function changed(console){
-                text = console.value
-                if(text[text.length-1]=='\n'){
-                    line = text.substring(text.trim().lastIndexOf('\n')+1+dir.length+2).trim()
-                    if(line==''){
-                        
-                    }else if(line=='ls' && dir=='server'){
-                        console.value+='index.html\nscript.js\nstyle.css\nuser_data\n'
-                    }else if(line=='ls' && dir=='user_data'){
-                        console.value+='passwords.json\npersonal_info.json\ncredit_cards.json\n'
-                    }else if(line == 'cd user_data'){
-                        dir='user_data'
-                    }  
-                    else if(line == 'cd ..'||line=='cd..'){
-                        dir='server'
-                    }else if(line.startsWith('cd')){
-                        console.value+='Unknown directory\n'
-                    }else{
-                        console.value+='unknown command: '+line+'\n'
-                    }
-                    console.value+=dir+'> '
-                    console.scrollTop = console.scrollHeight
-                
-                }
-            }
+dir ='server'
+function changed(console){
+    text = console.value
+    if(text[text.length-1]=='\n'){
+        line = text.substring(
+            text.trim().lastIndexOf('\n')
+            +1+dir.length+2).trim()
+    if(line==''){
+
+    }else if(line=='ls' && dir=='server'){
+        console.value+='index.html\nscript.js\nstyle.css\nuser_data\n'
+    }else if(line=='ls' && dir=='user_data'){
+        console.value+='passwords.json\npersonal_info.json\ncredit_cards.json\n'
+    }else if(line == 'cd user_data'){
+        dir='user_data'
+    }  
+    else if(line == 'cd ..'||line=='cd..'){
+        dir='server'
+    }else if(line.startsWith('cd')){
+        console.value+='Unknown directory\n'
+    }else{
+        console.value+='unknown command: '+line+'\n'
+    }
+    console.value+=dir+'> '
+    console.scrollTop = console.scrollHeight
+
+    }
+}
         </script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
