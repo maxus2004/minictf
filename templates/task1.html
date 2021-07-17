@@ -56,8 +56,10 @@ function changed(console){
         filename = line.substring(3).trim()
         if(getDir(dir)[filename] == null){
             console.value+='file not found'
-        }else{
+        }else if((typeof getDir(dir)[filename]) == 'string'){
             console.value+=getDir(dir)[filename]+'\n'
+        }else{
+            console.value+='not a file'
         }
     }else{
         console.value+='unknown command: '+line+'\n'
