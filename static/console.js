@@ -64,5 +64,5 @@ function changed(console) {
     }else if(text.length-text.lastIndexOf('\n') < dir.substring(dir.lastIndexOf('/')+1).length+3){
         console.value+=' '
     }
-    console.selectionEnd = console.value.length
+    console.selectionStart = console.value.length
 }
