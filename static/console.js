@@ -23,10 +23,6 @@ function getDir(path) {
 dir = 'server'
 function changed(console) {
     text = console.value
-    if(text.length-text.lastIndexOf('\n')
-    < dir.substring(dir.lastIndexOf('/')+1).length+3){
-        console.value+=' '
-    }
     if (text[text.length-1] == '\n') {
         line = text.substring(
             text.trim().lastIndexOf('\n')
@@ -65,5 +61,8 @@ function changed(console) {
         console.value += dir.substring(dir.lastIndexOf('/')+1)+'> '
         console.scrollTop = console.scrollHeight
 
+    }else if(text.length-text.lastIndexOf('\n')
+    < dir.substring(dir.lastIndexOf('/')+1).length+3){
+        console.value+=' '
     }
 }
