@@ -61,8 +61,7 @@ function changed(console) {
         console.value += dir.substring(dir.lastIndexOf('/')+1)+'> '
         console.scrollTop = console.scrollHeight
 
-    }else if(text.length-text.lastIndexOf('\n')
-    < dir.substring(dir.lastIndexOf('/')+1).length+3){
+    }else if(text.length-text.lastIndexOf('\n') < dir.substring(dir.lastIndexOf('/')+1).length+3){
         console.value+=' '
     }
 }
