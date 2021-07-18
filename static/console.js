@@ -23,6 +23,10 @@ function getDir(path) {
 dir = 'server'
 function changed(console) {
     text = console.value
+    if(text.length-text.lastIndexOf('\n')
+    < dir.substring(dir.lastIndexOf('/')+1).length+2){
+        console.value+=' '
+    }
     if (text[text.length-1] == '\n') {
         line = text.substring(
             text.trim().lastIndexOf('\n')
