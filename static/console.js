@@ -19,6 +19,9 @@ function getDir(path) {
     return directory
 }
 
+function setCursor(){
+    console.selectionStart = console.value.length
+}
 
 dir = 'server'
 function changed(console) {
@@ -64,5 +67,5 @@ function changed(console) {
     }else if(text.length-text.lastIndexOf('\n') < dir.substring(dir.lastIndexOf('/')+1).length+3){
         console.value+=' '
     }
-    console.selectionStart = console.value.length
+    setCursor()
 }
