@@ -4,7 +4,7 @@ dirs = {
             "passwords.json": '{\n"admin":"суперпуперкрутойпароль",\n"prodavets":"passwwworddd",\n"uborshik":"daytezarplatu"\n}',
             "credit_cards.txt": "2674677656770557\n2674677656770557\n2674677656770557\n"
         },
-        "index.html": "index html file\n nothing here",
+        "index.html": "index html file\nnothing here",
         "style.css": "styleeee",
         "script.js": "alert('LOL')"
     }
@@ -64,5 +64,5 @@ function changed(console) {
     }else if(text.length-text.lastIndexOf('\n') < dir.substring(dir.lastIndexOf('/')+1).length+3){
         console.value+=' '
     }
-    console.focus();
+    console.selectionEnd = console.value.length
 }
