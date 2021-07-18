@@ -1,4 +1,4 @@
-dirs = {
+files = {
     "server": {
         "user_data": {
             "passwords.json": '{\n"admin":"суперпуперкрутойпароль",\n"prodavets":"passwwworddd",\n"uborshik":"daytezarplatu"\n}',
@@ -8,11 +8,10 @@ dirs = {
         "style.css": "styleeee",
         "script.js": "alert('LOL')"
     }
-
 }
 
 function getDir(path) {
-    directory = dirs
+    directory = files
     for (part of path.split('/')) {
         directory = directory[part]
     }
