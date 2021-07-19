@@ -2,7 +2,7 @@ body{
     font-family: sans-serif;
 }
 #ui{
-    border: 1px solid grey;
+    
 }
 #textInput{
     margin: 3mm;
@@ -14,10 +14,10 @@ body{
     text-align: center;
 }
 #sendBtn{
-    
+    font-size: 20pt;
 }
 #comments{
-    border: 1px solid grey;
+    
 }
 #comments_text{
     text-align: center;
