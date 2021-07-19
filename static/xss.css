@@ -2,7 +2,7 @@ body{
     font-family: sans-serif;
 }
 #ui{
-    
+    border: 1px solid grey;
 }
 #textInput{
     
@@ -17,6 +17,9 @@ body{
     
 }
 #comments{
+    border: 1px solid grey;
+}
+#comments_text{
     
 }
 .comment{
