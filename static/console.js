@@ -57,7 +57,13 @@ function changed(console) {
             }
         }else if (line == 'clear'){
             console.value = ''
-        } else {
+        }else if(line == 'uname'){
+            console.value = 'PivzavodOS\n'
+        }else if (line == 'uname -r'){
+            console.value+='1.1.7-PivzavodOS\n'
+        }else if (){
+            console.value+='PivzavodOS servermaksa 1.1.7-PivzavodOS  X86_64\n'
+        }else {
             console.value += 'unknown command: '+line+'\n'
         }
         console.value += dir.substring(dir.lastIndexOf('/')+1)+'> '
