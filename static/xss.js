@@ -1,5 +1,5 @@
 function send(){
-    text = document.getElementById('textInput').value.replace(/[<>"']/g, '')
+    text = document.getElementById('textInput').value.replace(/[<>]/g, '"')
     name = document.getElementById('nameInput').value
     
     
