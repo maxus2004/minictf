@@ -2,7 +2,7 @@ function send(){
     text = document.getElementById('textInput').value
     name = document.getElementById('nameInput').value
     
-    alert(text=='')
+    alert(name=='')
     
     //text = text.replace(/[<>]/g, '"')
     
