@@ -2,7 +2,8 @@ function send(){
     text = document.getElementById('textInput').value
     name = document.getElementById('nameInput').value
     
-    alert(name=='')
+    if(name=='')name='имя'
+    if(text=='')text='офигенный сайт'
     
     //text = text.replace(/[<>]/g, '"')
     
