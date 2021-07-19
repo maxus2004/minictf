@@ -24,10 +24,10 @@ body{
     margin:3mm;
 }
 .text{
-    font-size: 20pt;
+    font-size: 16pt;
 }
 .name{
-    font-size: 16pt;
+    font-size: 14pt;
     color:grey;
     text-align:right;
 }
