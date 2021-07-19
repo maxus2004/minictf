@@ -2,7 +2,7 @@ body{
     font-family: sans-serif;
 }
 #ui{
-    
+    text-align:right;
 }
 #textInput{
     width:calc(100% - 6mm);
@@ -17,7 +17,7 @@ body{
 }
 #sendBtn{
     font-size: 20pt;
-    float: right;
+    : right;
 }
 #comments{
     
