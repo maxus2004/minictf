@@ -5,11 +5,11 @@ body{
     
 }
 #textInput{
-    width:100%;
+    width:calc(100% - 6mm);
     margin: 3mm;
 }
 #nameInput{
-    width:100%;
+    width:calc(100% - 6mm);
     margin: 3mm;
 }
 #send_comment{
