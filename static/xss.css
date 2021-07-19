@@ -5,12 +5,10 @@ body{
     text-align:right;
 }
 #textInput{
-    width:calc(100% - 6mm);
-    margin: 3mm;
+    width:100%;
 }
 #nameInput{
-    width:calc(100% - 6mm);
-    margin: 3mm;
+    width:100%;
 }
 #send_comment{
     text-align: center;
