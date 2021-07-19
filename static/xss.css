@@ -5,10 +5,10 @@ body{
     border: 1px solid grey;
 }
 #textInput{
-    
+    margin: 3mm;
 }
 #nameInput{
-    
+    margin: 3mm;
 }
 #send_comment{
     text-align: center;
