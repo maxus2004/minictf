@@ -11,7 +11,7 @@ body{
     
 }
 #send_comment{
-    
+    text-align: center;
 }
 #sendBtn{
     
@@ -20,7 +20,7 @@ body{
     border: 1px solid grey;
 }
 #comments_text{
-    
+    text-align: center;
 }
 .comment{
     background-color: lightblue;
