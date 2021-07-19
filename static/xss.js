@@ -5,7 +5,7 @@ function send(){
     if(name=='')name='имя'
     if(text=='')text='офигенный сайт'
     
-    //text = text.replace(/[<>]/g, '"')
+    text = text.replace(/[<>]/g, '"')
     
     
     comment = '<div class="comment"><div class="text">'+text+'</div><div class="name">'+name+'</div></div>'
