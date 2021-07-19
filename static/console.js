@@ -58,7 +58,7 @@ function changed(console) {
         }else if (line == 'clear'){
             console.value = ''
         }else if(line == 'uname'){
-            console.value = 'PivzavodOS\n'
+            console.value += 'PivzavodOS\n'
         }else if (line == 'uname -r'){
             console.value+='1.1.7-PivzavodOS\n'
         }else if (line == 'uname -a'){
