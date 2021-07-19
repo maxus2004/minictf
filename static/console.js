@@ -61,7 +61,7 @@ function changed(console) {
             console.value = 'PivzavodOS\n'
         }else if (line == 'uname -r'){
             console.value+='1.1.7-PivzavodOS\n'
-        }else if (){
+        }else if (line == 'uname -a'){
             console.value+='PivzavodOS servermaksa 1.1.7-PivzavodOS  X86_64\n'
         }else {
             console.value += 'unknown command: '+line+'\n'
