@@ -7,6 +7,7 @@ function send(){
     
     text = text.replace(/[<>]/g, '"')
     
+    name = name.replace(/[‘’“”]/g, '"')
     
     comment = '<div class="comment"><div class="text">'+text+'</div><div class="name">'+name+'</div></div>'
     document.getElementById('comments').innerHTML+=comment
