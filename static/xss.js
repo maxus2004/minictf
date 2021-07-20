@@ -11,3 +11,7 @@ function send(){
     comment = '<div class="comment"><div class="text">'+text+'</div><div class="name">'+name+'</div></div>'
     document.getElementById('comments').innerHTML+=comment
 }
+
+function answer(){
+    alert('Ответ: пожилая мышь')
+}
